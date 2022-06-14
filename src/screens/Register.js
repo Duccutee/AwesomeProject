@@ -45,7 +45,7 @@ const Register = ({navigation}) => {
               size={20}
               style={STYLES.inputIcon}
             />
-            <TextInput placeholder="Name" style={STYLES.input} value={username} onChangeText={text =>setUsername(text)}/>
+            <TextInput placeholder="create username" style={STYLES.input} value={username} onChangeText={text =>setUsername(text)}/>
           </View>
           <View style={STYLES.inputContainer}>
             <Icon

@@ -23,13 +23,12 @@ export const AuthProvide=({children})=> {
              
          });
     };
-    const login = (username, email, password) => {
+    const login = ( username, password) => {
         
     
         axios
           .post(`${BASE_URL}/account`, {
             username,
-            email,
             password,
           })
           .then(res => {

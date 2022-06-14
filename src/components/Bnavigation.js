@@ -32,16 +32,16 @@ const Bnavigation = () =>{
         <Tab.Screen name="Search" component={HomeScreen}
         options={{tabBarIcon:({color})=>(
             <View style={{
-                height:60,
-                width:60,
-                justifyContent:'center',
-                alignItems:'center',
-                backgroundColor:COLORS.white,
-                borderColor:COLORS.primary,
-                borderWidth:3,
-                borderRadius:30,
-                top:-25,
-                elevation:5,
+            //    height:60,
+            //    width:60,
+             //   justifyContent:'center',
+               // alignItems:'center',
+                //backgroundColor:COLORS.white,
+                //borderColor:COLORS.primary,
+                //borderWidth:3,
+                //borderRadius:30,
+                //top:-25,
+                //elevation:5,
             }}>
         <Icon name="search" color={color} size={28}/>
         </View>

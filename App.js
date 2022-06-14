@@ -18,6 +18,7 @@ import Login from './src/screens/Login';
 import Register from './src/screens/Register';
 import Bnavigation from './src/components/Bnavigation';
 import { AuthProvide } from './src/auth';
+
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
       <Stack.Navigator screenOptions={{headerShown:false}}>
          <Stack.Screen name="First" component={HeadingScreen} />
          <Stack.Screen name="Home" component={Bnavigation} />
+    
+
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} /> 
       </Stack.Navigator>

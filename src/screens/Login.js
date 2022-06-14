@@ -11,8 +11,8 @@ import { auth } from '../auth';
 
 
 const Login = ({navigation}) => {
-  const [username,setUsername]=useState("DUC LE");
-  const [email, setEmail] = useState(null);
+  const [username,setUsername]=useState(null);
+ 
   const [password, setPassword]= useState(null);
   const { login}= useContext(auth);
 
@@ -45,13 +45,13 @@ const Login = ({navigation}) => {
         <View style={{marginTop: 20}}>
           <View style={STYLES.inputContainer}>
             <Icon
-              name="mail-outline"
+              name="person-outline"
               color={COLORS.light}
               size={20}
               style={STYLES.inputIcon}
             />
             
-            <TextInput placeholder="Email" style={STYLES.input} value={email} onChangeText={text =>setEmail(text)} />
+            <TextInput placeholder="Username" style={STYLES.input} value={username} onChangeText={text =>setUsername(text)} />
           </View>
           <View style={STYLES.inputContainer}>
             <Icon
@@ -69,7 +69,7 @@ const Login = ({navigation}) => {
           </View>
           <View>
           <Primarybutton onPress={() => {
-            {login(username,email,password)}
+            {login(username,password)}
             navigation.navigate('Home')
             }} title="Sign in"/>
           </View>
